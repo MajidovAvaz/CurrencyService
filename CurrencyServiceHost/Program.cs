@@ -7,8 +7,8 @@ namespace CurrencyServiceHost
     {
         static void Main(string[] args)
         {
-            var socketServer = new CurrencyService.SocketServer();
-            socketServer.Start();
+           var socketServer=new CurrencyService.SocketServer();
+         socketServer.Start();
 
             using (ServiceHost host = new ServiceHost(typeof(CurrencyService.CurrencyService)))
             {
