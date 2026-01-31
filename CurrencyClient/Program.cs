@@ -7,7 +7,7 @@ namespace CurrencyClient
         static void Main(string[] args)
         {
             Console.WriteLine("Client started");
-
+            
             try
             {
                 var client = new CurrencyServiceRef.CurrencyServiceClient("BasicHttpBinding_ICurrencyService");
