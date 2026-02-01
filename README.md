@@ -56,3 +56,24 @@ The solution consists of three main projects:
 1. Clone the repository:
    ```bash
    git clone https://github.com/MajidovAvaz/CurrencyService.git
+1. **Open Visual Studio as Administrator**
+2. Open the solution file:
+3. Set startup projects:
+- `CurrencyServiceHost` → Start
+- `CurrencyClient` → Start
+4. Run the solution (**Ctrl + F5**)
+
+You should see:
+- The service host starting successfully
+- The client displaying output and interacting with the service
+
+---
+
+## 🔐 Common Issue & Fix
+
+### ❌ Error: Access is denied when opening HTTP endpoint
+**Cause:** Windows blocks non-admin processes from binding to HTTP ports.
+
+**Fix options:**
+- Run Visual Studio as **Administrator**
+
